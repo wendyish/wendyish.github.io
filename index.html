@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="bookmark" href="favicon.ico" type="image/x-icon" />
+<title>Your Name's Homepage</title>
+
+<script>
+  function switchLanguage(lang) {
+    // Hide all sections
+    var sections = document.querySelectorAll('.lang');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
+
+    // Show selected language
+    var selectedLang = document.querySelectorAll('.lang-' + lang);
+    selectedLang.forEach(function(section) {
+      section.style.display = 'block';
+    });
+  }
+
+  // Default to English on load
+  window.onload = function() {
+    switchLanguage('en');
+  };
+</script>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+  <div class="menu-category">Menu</div>
+  <div class="menu-item"><b><a href="index.html" class="current">Home</a></b></div>
+  <div class="menu-item"><b><a href="https://scholar.google.com/citations?user=YourGoogleScholarID" target="_blank">Google Scholar</a></b></div>
+  <div class="menu-item"><b><a href="https://dblp.org/pid/YourDBLPID" target="_blank">DBLP</a></b></div>
+  <div class="menu-item"><b><a href="https://github.com/YourGitHubID" target="_blank">GitHub</a></b></div>
+  <div class="menu-item"><b><a href="https://yourpersonalwebsite.com" target="_blank">Personal Website</a></b></div>
+  
+  <!-- Language toggle -->
+  <div class="menu-item">
+    <button onclick="switchLanguage('en')">English</button> | 
+    <button onclick="switchLanguage('cn')">中文</button>
+  </div>
+</td>
+
+<td id="layout-content">
+  <div id="toptitle">
+    <h1>Your Name</h1>
+  </div>
+  
+  <table class="imgtable"><tr><td>
+    <a href="https://github.com/YourGitHubID"><img src="your-photo.jpg" alt="Your Name" height="180px" /></a>&nbsp;</td>
+    <td align="left">
+      
+      <!-- English Content -->
+      <div class="lang lang-en">
+        <p><b>Your Position</b> <br />
+        <b><a href="https://yourdepartment.com" target="_blank">Your Department</a>, <a href="https://youruniversity.com" target="_blank">Your University</a></b> <br />
+        <b>Research Interests:</b> <a href="https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:constraint_solving" target="_blank">Your Research Area</a> <br />
+        <br>
+        <b>E-mail: </b> your.email@university.com <br />
+        <b>Address: </b> Your Address, City, Country <br />
+        </p>
+      </div>
+
+      <!-- Chinese Content -->
+      <div class="lang lang-cn" style="display:none;">
+        <p><b>您的职位</b> <br />
+        <b><a href="https://yourdepartment.com" target="_blank">您的部门</a>, <a href="https://youruniversity.com" target="_blank">您的大学</a></b> <br />
+        <b>研究方向:</b> <a href="https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:constraint_solving" target="_blank">您的研究方向</a> <br />
+        <br>
+        <b>电子邮件: </b> your.email@university.com <br />
+        <b>地址: </b> 您的地址, 城市, 国家 <br />
+        </p>
+      </div>
+
+      <h2>About Me</h2>
+
+      <!-- English Content -->
+      <div class="lang lang-en">
+        <p>I am currently an [your position] at [your department] of [your university]. Before that, I worked at [previous roles]. My research interests are in [your research interests].</p>
+      </div>
+
+      <!-- Chinese Content -->
+      <div class="lang lang-cn" style="display:none;">
+        <p>我目前是[您的职位]，在[您的部门]，隶属于[您的大学]。之前，我曾在[过去的工作]工作。我的研究方向包括[您的研究方向]。</p>
+      </div>
+
+      <h2>Publications</h2>
+      <p>See my recent publications at [Google Scholar](https://scholar.google.com/citations?user=YourGoogleScholarID) and [DBLP](https://dblp.org/pid/YourDBLPID).</p>
+
+      <h2>Honors and Awards</h2>
+      <ul>
+        <li>Example Award 1</li>
+        <li>Example Award 2</li>
+      </ul>
+
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1: Description</li>
+        <li>Project 2: Description</li>
+      </ul>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
